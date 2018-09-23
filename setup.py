@@ -28,6 +28,7 @@ setup(
      python_requires = '~=3.6',
      test_suite = 'nose.collector',
      test_requires = ['nose'],
+     scripts = ['bin/lss'],
      include_package_data = True,
      zip_safe = False
      )
