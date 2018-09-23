@@ -17,7 +17,7 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3.6',
         'Topic :: Scientific/Engineering :: Atmospheric Science',
-      ],
+        ],
      keywords = 'data info list variable utilities',
      url = 'https://github.com/hong-chen/datainfo',
      author = 'Hong Chen, Yixing Shao',
