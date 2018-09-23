@@ -24,7 +24,10 @@ def GET_VARIABLE_NAMES(obj, prefix=''):
 
 def FILE_SCAN(fname):
 
-    f = SD(fname, SDC.READ)
+    try:
+        f = SD(fname, SDC.READ)
+    except:
+        exit('Error [lss]: cannot access \'{fname}\'.'.format(fname=fname))
 
     vnames = f.datasets().keys()
 

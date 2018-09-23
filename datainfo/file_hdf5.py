@@ -24,7 +24,10 @@ def GET_VARIABLE_NAMES(obj, prefix=''):
 
 def FILE_SCAN(fname):
 
-    f = h5py.File(fname, 'r')
+    try:
+        f = h5py.File(fname, 'r')
+    except:
+        exit('Error [lss]: cannot access \'{fname}\'.'.format(fname=fname))
 
     vnames = []
     for vname in GET_VARIABLE_NAMES(f):

@@ -28,7 +28,10 @@ def GET_VARIABLE_NAMES(obj, prefix=''):
 
 def FILE_SCAN(fname):
 
-    f = nc4.Dataset(fname, 'r')
+    try:
+        f = nc4.Dataset(fname, 'r')
+    except:
+        exit('Error [lss]: cannot access \'{fname}\'.'.format(fname=fname))
 
     vnames = []
     objs   = []

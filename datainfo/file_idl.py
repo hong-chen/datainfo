@@ -16,7 +16,10 @@ except ImportError:
 
 def FILE_SCAN(fname):
 
-    f = readsav(fname)
+    try:
+        f = readsav(fname)
+    except:
+        exit('Error [lss]: cannot access \'{fname}\'.'.format(fname=fname))
 
     vnames0 = f.keys()
     data_dict = {}
