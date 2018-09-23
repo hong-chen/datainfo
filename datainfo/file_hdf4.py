@@ -46,5 +46,5 @@ def FILE_SCAN(fname):
 
 if __name__ == '__main__':
 
-    fname_test = os.path.abspath('../test/data/sample.hdf')
+    fname_test = os.path.abspath('test/data/sample.hdf')
     data_dict  = FILE_SCAN(fname_test)

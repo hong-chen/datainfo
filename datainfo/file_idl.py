@@ -25,7 +25,7 @@ def FILE_SCAN(fname):
         if isinstance(obj, numpy.recarray):
             vnames1 = obj.dtype.names
             for vname1 in vnames1:
-                vname = '.{vname0}.{vname1}[0]'.format(vname0=vname0, vname1=vname1)
+                vname = '{vname0}.{vname1}[0]'.format(vname0=vname0, vname1=vname1)
                 obj_new   = obj[vname1][0]
                 if isinstance(obj_new, numpy.ndarray):
                     data_dict[vname] = str(obj_new.shape)
@@ -51,7 +51,5 @@ def FILE_SCAN(fname):
 
 if __name__ == '__main__':
 
-    fname_test = os.path.abspath('../test/data/sample.sav')
+    fname_test = os.path.abspath('test/data/sample1.sav')
     data_dict  = FILE_SCAN(fname_test)
-    for vname in data_dict.keys():
-        print(vname, data_dict[vname])

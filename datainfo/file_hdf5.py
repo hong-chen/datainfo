@@ -44,5 +44,5 @@ def FILE_SCAN(fname):
 
 if __name__ == '__main__':
 
-    fname_test = os.path.abspath('../test/data/sample.h5')
+    fname_test = os.path.abspath('test/data/sample.h5')
     data_dict  = FILE_SCAN(fname_test)
