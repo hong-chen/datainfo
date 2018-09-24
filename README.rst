@@ -30,7 +30,7 @@ How to install
 Open up a terminal,
 ::
 
-  pip install datainfo
+  pip3 install datainfo
 
 After installation, add
 ::
