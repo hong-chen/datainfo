@@ -10,10 +10,12 @@ Description
 This code can be used to explore data with the following format:
 
 - HDF4
-- HDF5
-- netCDF and netCDF4
-- IDL save file
 
+- HDF5
+
+- netCDF and netCDF4
+
+- IDL save file
 
 ============
 Dependencies
@@ -36,13 +38,6 @@ Open up a terminal,
 ::
 
   pip3 install datainfo
-
-After installation, add
-::
-
-  alias lss="lss -f"
-
-to the source file of your shell environment, e.g., ~/.bashrc (or ~/.bash_profile).
 
 ==========
 How to use

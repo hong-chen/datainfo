@@ -10,12 +10,12 @@ from datainfo.file_netcdf import FILE_SCAN as GET_DATA_DICT_NC
 
 
 parser = argparse.ArgumentParser(description='List variable information from a data file.')
-parser.add_argument('-m', '--mode', metavar='mode', type=str, nargs='?', default='file_info',
-                    help='mode, e.g., \'file_info\' or \'dataset_info\', default is \'file_info\'.')
-parser.add_argument('-f', '--fname', metavar='file_path', type=str, nargs=1,
-                    help='file name including path, e.g., /some/path/sample.h5', required=True)
-parser.add_argument('-t', '--format', metavar='data_type', type=str, nargs='?',
+parser.add_argument('fname', metavar='file_path', type=str, nargs=1,
+                    help='file name including path, e.g., /some/path/sample.h5')
+parser.add_argument('format', metavar='data_type', type=str, nargs='?',
                     help='format of the data file, e.g., h5')
+parser.add_argument('mode', metavar='mode', type=str, nargs='?', default='file_info',
+                    help='mode, e.g., \'file_info\' or \'dataset_info\', default is \'file_info\'.')
 args = parser.parse_args()
 
 
