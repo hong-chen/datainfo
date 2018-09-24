@@ -11,7 +11,7 @@ setup(
      version = '0.1.1',
      description = 'List general information of datasets within a data file commonly used in Atmospheric Science.',
      long_description = long_description,
-     # long_description_content_type = 'text/markdown',
+     long_description_content_type = 'text/x-rst',
      classifiers = [
         'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: MIT License',
@@ -26,8 +26,6 @@ setup(
      packages = ['datainfo'],
      install_requires = ['nose', 'numpy', 'scipy', 'h5py', 'netcdf4', 'python-hdf4'],
      python_requires = '~=3.6',
-     # test_suite = 'nose.collector',
-     # test_requires = ['nose'],
      scripts = ['bin/lss'],
      include_package_data = True,
      zip_safe = False
