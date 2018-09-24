@@ -9,35 +9,49 @@ This code can be used to explore data with the following format:
 - netCDF and netCDF4
 - IDL save file
 
----
-### Dependencies
+
+============
+Dependencies
+============
+
 
 - Python 3.6
-  - [h5py](http://www.h5py.org/)
-  - [pyhdf](http://fhs.github.io/python-hdf4/)
-  - [scipy.io](https://docs.scipy.org/doc/scipy/reference/io.html)
-  - [netCDF4](http://unidata.github.io/netcdf4-python/)
 
----
-### How to install
+  - `h5py <http://www.h5py.org/>`_
+  - `pyhdf <http://fhs.github.io/python-hdf4/>`_
+  - `scipy.io <https://docs.scipy.org/doc/scipy/reference/io.html>`_
+  - `netCDF4 <http://unidata.github.io/netcdf4-python/>`_
 
-  ```bash
+
+==============
+How to install
+==============
+
+Open up a terminal,
+::
+
   pip install datainfo
-  ```
 
-  in the source file of your shell environment, e.g., ~/.bashrc, add
-  ```bash
+After installation, add
+::
+
   alias lss="lss -f"
-  ```
 
----
-### How to use
+to the source file of your shell environment, e.g., ~/.bashrc (or ~/.bash_profile).
 
-  ```bash
+==========
+How to use
+==========
+
+For example, we have a HDF4 file named "MCD43C3.A2015337.005.2015365205333.hdf".
+Open up a terminal, type in:
+::
+
   lss MCD43C3.A2015337.005.2015365205333.hdf
-  ```
 
-  ```bash
+The variable information will be displayed as the following:
+::
+
   + HDF4
   Albedo_BSA_Band1 ----- : Dataset  (3600, 7200)
   Albedo_BSA_Band2 ----- : Dataset  (3600, 7200)
@@ -64,10 +78,3 @@ This code can be used to explore data with the following format:
   Percent_Inputs ------- : Dataset  (3600, 7200)
   Percent_Snow --------- : Dataset  (3600, 7200)
   -
-  ```
-
-4. For data that has unclear file type extension, e.g., `test.idlsav`,
-
-  ```bash
-  lss test.idlsav idl
-  ```
