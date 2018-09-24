@@ -8,7 +8,7 @@ with open(os.path.join(current_dir, 'README.rst'), encoding='utf-8') as f:
 
 setup(
      name = 'datainfo',
-     version = '0.1.1',
+     version = '0.1.2',
      description = 'List general information of datasets within a data file commonly used in Atmospheric Science.',
      long_description = long_description,
      long_description_content_type = 'text/x-rst',
