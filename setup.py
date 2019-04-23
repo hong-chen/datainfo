@@ -8,7 +8,7 @@ with open(os.path.join(current_dir, 'README.rst'), encoding='utf-8') as f:
 
 setup(
      name = 'datainfo',
-     version = '0.1.2',
+     version = '0.1.3',
      description = 'List general information of datasets within a data file commonly used in Atmospheric Science.',
      long_description = long_description,
      long_description_content_type = 'text/x-rst',
@@ -24,7 +24,7 @@ setup(
      author_email = 'me@hongchen.cz, yixingshao@foxmail.com',
      license = 'MIT',
      packages = ['datainfo'],
-     install_requires = ['nose', 'numpy', 'scipy', 'h5py', 'netcdf4', 'python-hdf4'],
+     install_requires = ['nose', 'numpy', 'scipy', 'h5py', 'netcdf4', 'pyhdf'],
      python_requires = '~=3.6',
      scripts = ['bin/lss'],
      include_package_data = True,
