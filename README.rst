@@ -1,6 +1,6 @@
-Update
+Important Note
 ~~~~~~
-Changed the README format from Markdown to rST.
+This project has been merged into `er3t <https://github.com/hong-chen/er3t>`_, e.g., `er3t/bin/lss` and `er3t/bin/lsa`.
 
 
 ===========
