@@ -1,6 +1,6 @@
 Important Note
 ~~~~~~
-This project has been merged into `er3t <https://github.com/hong-chen/er3t>`_ under ``er3t/bin``.
+This project has been merged into `er3t <https://github.com/hong-chen/er3t>`_ at ``bin/lss`` and ``bin/lsa``.
 
 |
 |
